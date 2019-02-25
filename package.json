@@ -1,0 +1,19 @@
+{
+  "name": "api-my-books",
+  "version": "1.0.0",
+  "description": "API for books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minnocci/api-my-books.git"
+  },
+  "author": "Juan Minnocci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/minnocci/api-my-books/issues"
+  },
+  "homepage": "https://github.com/minnocci/api-my-books#readme"
+}
