@@ -17,9 +17,7 @@
   },
   "homepage": "https://github.com/minnocci/api-my-books#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "mongodb": "^2.2.36"
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "nodemon": "^1.18.10"
