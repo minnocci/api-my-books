@@ -3,6 +3,7 @@ const app = express()
 const port = process.env.PORT || 5000
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const headers = require('./config/headers')
 const Auth = require('./api/models/authModel')
 const Me = require('./api/models/meModel')
 const Categories = require('./api/models/categoriesModel')
