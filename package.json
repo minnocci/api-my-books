@@ -1,8 +1,8 @@
 {
   "name": "api-my-books",
   "version": "1.0.0",
-  "description": "API for books",
-  "main": "index.js",
+  "description": "MongoDB with Mongoose on Node.js API for books",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon server.js"
   },
