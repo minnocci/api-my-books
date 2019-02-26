@@ -6,11 +6,9 @@ const MeSchema = new Schema({
     type: String
   },
   access_type: {
-    type: [{
-      type: String,
-      enum: ['free', 'premium']
-    }],
-    default: ['premium']
+    type: String,
+    enum: ['free', 'premium'],
+    default: 'premium'
   }
 })
 
