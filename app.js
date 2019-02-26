@@ -3,7 +3,7 @@ const app = express()
 const port = process.env.PORT || 5000
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
-const headers = require('./config/headers')
+const configHeaders = require('./api/config/headers')
 const Auth = require('./api/models/authModel')
 const Me = require('./api/models/meModel')
 const Categories = require('./api/models/categoriesModel')
@@ -15,7 +15,7 @@ mongoose.Promise = global.Promise
 const db = mongoose.connection
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
-app.use(allowCrossDomain)
+app.use(configHeaders.allowCrossDomain)
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
