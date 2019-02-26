@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 5000
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const Auth = require('./api/models/authModel')
@@ -8,7 +8,7 @@ const Me = require('./api/models/meModel')
 const Categories = require('./api/models/categoriesModel')
 const Books = require('./api/models/booksModel')
   
-const mongoDB = 'mongodb+srv://api-my-books:api-my-books@cluster0-8ew92.mongodb.net/api-my-books?retryWrites=true'
+const mongoDB = process.env.MONGO_URI
 mongoose.connect(mongoDB, { useNewUrlParser: true })
 mongoose.Promise = global.Promise
 const db = mongoose.connection
