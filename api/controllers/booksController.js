@@ -4,7 +4,7 @@ const Books = mongoose.model('Books')
 exports.getAllBooks = (req, res) => {
   Books.find({}, (err, booksList) => {
     if (err) res.send(err)
-    res.json(booksList.map((book) => (
+    res.json({books: booksList.map((book) => (
       {
         id: book['id'],
         title: book['title'],
@@ -12,7 +12,7 @@ exports.getAllBooks = (req, res) => {
         image_url: book['image_url'],
         category_id: book['category_id']
       }
-    )))
+    ))})
   })
 }
 
